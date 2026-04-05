@@ -1,0 +1,212 @@
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fefefe;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #ff6f61, #ff9a76);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* ===== Top Right Controls ===== */
+.top-right-controls {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ===== Top Buttons (Login/Register) ===== */
+.top-btn {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.top-btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* ===== Theme Toggle Button (Circle) ===== */
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #ff6f61;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s, color 0.3s;
+}
+
+.theme-btn:hover {
+  background: #ffe082;
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ff6f61;
+  padding: 12px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe082;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #ff9a76, #ffd54f);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.btn {
+  background: #ff6f61;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* ===== Features ===== */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.2s, background 0.3s, color 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #ff6f61;
+  margin-bottom: 12px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffe082;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+body.dark header {
+  background: linear-gradient(135deg, #2e2e2e, #444);
+}
+
+body.dark nav {
+  background: #333;
+}
+
+body.dark nav a:hover {
+  color: #ff9a76;
+}
+
+body.dark .hero {
+  background: linear-gradient(135deg, #333, #444);
+  color: #eee;
+}
+
+body.dark .feature-card {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+body.dark footer {
+  background: #2e2e2e;
+  color: #ccc;
+}
+
+body.dark .theme-btn {
+  background: #444;
+  color: #ffd54f;
+}

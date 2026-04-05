@@ -1,0 +1,79 @@
+/* General Body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6f61, #ff9a76);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Login Box */
+.login-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.login-box label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255,111,97,0.4);
+  outline: none;
+}
+
+/* Stylish Button */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #ff6f61, #ff9a76);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(45deg, #ff9a76, #ff6f61);
+  transform: translateY(-2px);
+}
+
+#msg {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

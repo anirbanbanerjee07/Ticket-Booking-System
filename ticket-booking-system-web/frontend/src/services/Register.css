@@ -1,0 +1,148 @@
+/* ===== Register.css ===== */
+
+/* Reset + base */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fefefe;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff6f61, #ff9a76);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Controls (lang + theme buttons) */
+.top-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.toggle-btn {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.toggle-btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* Form container */
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255, 111, 97, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn.primary {
+  background: #ff6f61;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: #ffd54f;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #fbc02d;
+  transform: translateY(-2px);
+}
+
+.btn.link {
+  background: transparent;
+  color: #ff6f61;
+  text-decoration: underline;
+  padding: 12px 0;
+}
+
+.btn.link:hover {
+  color: #e64a19;
+}
+
+/* Message */
+#msg {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #ff6f61;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .btn-group {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,162 @@
+/* ===== Page-Specific Styles for Search ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff6f61, #ff9a76);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Controls */
+.top-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ff6f61;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.toggle-btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 1 200px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #ff6f61;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* Results */
+#results {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0;
+  color: #ff6f61;
+}
+
+.actions a {
+  margin-left: 10px;
+  text-decoration: none;
+  background: #1565c0;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.actions a:hover {
+  background: #0d47a1;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+body.dark .container {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+body.dark .card {
+  background: #333;
+}
+
+body.dark .btn,
+body.dark .toggle-btn {
+  background: #bb86fc;
+}
+
+body.dark .btn:hover,
+body.dark .toggle-btn:hover {
+  background: #9a67ea;
+}

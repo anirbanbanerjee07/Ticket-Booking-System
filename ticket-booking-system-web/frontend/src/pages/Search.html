@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Buses</title>
+  <link rel="stylesheet" href="../services/search.css">
+  <script src="../services/api.js"></script>
+  <script src="../services/search.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2 id="title">Search Buses</h2>
+  </header>
+
+  <div class="top-controls">
+    <button class="toggle-btn" id="langToggle">🌐 Hindi</button>
+    <button class="toggle-btn" id="modeToggle">🌙 Dark</button>
+  </div>
+
+  <div class="container">
+    <form id="searchForm">
+      <div>
+        <label id="fromLabel">From:</label>
+        <input type="text" id="from" required>
+      </div>
+      <div>
+        <label id="toLabel">To:</label>
+        <input type="text" id="to" required>
+      </div>
+      <button type="submit" class="btn" id="searchBtn">🔍 Search</button>
+    </form>
+    <div id="results"></div>
+  </div>
+</body>
+</html>

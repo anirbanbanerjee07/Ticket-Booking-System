@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../services/dashboard.css">
+</head>
+<body>
+  <header>
+    <h2 id="title">🚍 User Dashboard</h2>
+  </header>
+
+  <!-- Top Controls -->
+  <div class="top-controls">
+    <button class="toggle-btn" id="langToggle">🌐 हिंदी</button>
+    <button class="toggle-btn" id="modeToggle">🌙 Dark</button>
+  </div>
+
+  <div class="container">
+    <p id="welcomeText">Welcome back! Manage your bus bookings with ease 🚀</p>
+    
+    <nav>
+      <a href="Search.html" id="searchBtn">🔍 Search Buses</a>
+      <a href="MyBookings.html" id="bookingsBtn">📑 My Bookings</a>
+    </nav>
+
+    <div class="card-container">
+      <div class="card">
+        <h3 id="card1Title">🔎 Search</h3>
+        <p id="card1Text">Find available buses and book your tickets quickly.</p>
+      </div>
+      <div class="card">
+        <h3 id="card2Title">🚌 My Bookings</h3>
+        <p id="card2Text">View and manage your upcoming and past trips.</p>
+      </div>
+      <div class="card">
+        <h3 id="card3Title">⚙️ Settings</h3>
+        <p id="card3Text">Update your account details and preferences.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../services/dashboard.js"></script>
+</body>
+</html>
